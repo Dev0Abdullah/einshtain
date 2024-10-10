@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin Page</title>
+    <link rel="website icon" href="./image/wallpaperflare.com_wallpaper.jpg">
+    <link rel="stylesheet" href="css/signUp.css">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awsome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+          <img
+            src="./image/wallpaperflare.com_wallpaper.jpg"
+            alt=""
+          />
+          <p>Mariam Karam</p>
+        </a>
+    </nav>
+
+    <section class="signup-page">
+      <div class="container">
+        <div class="image">
+          <img src="./image/Programmer-rafiki.png" alt="">
+        </div>
+        <div class="signUp">
+          <h1>انشئ <span>حسابك الان </span></h1>
+          <p>قم ب ادخال بيانتك لانشاء الصفحه</p>
+          
+          <form dir="rtl" class="form">
+            <div class="name">
+              <div class="form">
+                <input type="text" id="fName" required>
+                <label for="fName"> الاسم الاول <span><i class="fa-solid fa-user"></i></span></label>
+              </div>
+              <div class="form">
+                <input type="text" id="lName" required>
+                <label for="lName"> الاسم الاخير <span><i class="fa-solid fa-user"></i></span></label>
+              </div>
+            </div>
+            <div class="phones" >
+              <div class="form">
+                <input type="text" id="phone " class="phone" maxlength="11" required>
+                <label for="phone">رقم الهاتف<span><i class="fa-solid fa-phone"></i></span></label>
+              </div>
+              <div class="form">
+                <input type="text" id="pPhone" class="phone" maxlength="11" required>
+                <label for="pPhone">رقم هاتف ولي الامر <span><i class="fa-solid fa-phone"></i></span></label>
+              </div>
+            </div>
+            <div class="email">
+              <div class="form">
+                <input type="email" id="email" required>
+                <label for="email">البريد الالكتروني <span><i class="fa-solid fa-envelope"></i></span></label>
+              </div>
+            </div>
+            <div class="passwords">
+              <div class="form">
+                <input type="password" id="pass" required maxlength="16" minlength="8">
+                <label for="pass">كلمه المرور <span><i class="fa-solid fa-lock"></i></span></label>
+              </div>
+              <div class="form">
+                <input type="password" id="pass-confirm" required maxlength="16" minlength="8">
+                <label for="pass-confirm">تأكيد كلمه المرور <span><i class="fa-solid fa-lock"></i></span></label>
+              </div>
+            </div>
+  
+            <button type="submit">انشاء الحساب</button>
+            <p>
+              لديك حساب ؟ <span><a href="login.html">سجل الان</a></span>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="/js/signUp.js"></script>
+</body>
+</html>

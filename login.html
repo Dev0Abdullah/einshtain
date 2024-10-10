@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="website icon" href="./image/wallpaperflare.com_wallpaper.jpg">
+    <link rel="stylesheet" href="css/login.css" />
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awsome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="abs">
+      <a href="index.html">
+        <img
+          src="./image/wallpaperflare.com_wallpaper.jpg"
+          alt=""
+        />
+        <p>Mariam Karam</p>
+      </a>
+    </nav>
+    <section class="login-page">
+      <div class="container">
+        <div class="image">
+          <img src="./image/Mobile login-rafii.png" alt="" />
+        </div>
+        <div class="login">
+          <h1>تسجيل <span>الدخول</span></h1>
+          <p>سجل الدخول الي الحساب خاصتك بواسطه كلمه المرور و رقم الهاتف</p>
+
+          <form>
+            <div class="form">
+              <input type="text" id="phone" maxlength="11" required />
+              <label for="phone" class="text">رقم الهاتف</label>
+            </div>
+            <div class="form">
+              <input
+                type="password"
+                id="password"
+                required=""
+                maxlength="16"
+                minlength="8"
+              />
+              <label for="password" class="text">كلمه المرور</label>
+              <label for="password" class="eye"
+                ><i class="fa-solid fa-eye show-pass"></i
+              ></label>
+            </div>
+            <button type="submit">تسجيل الدخول</button>
+            <p>
+              ليس لديك حساب ؟
+              <span><a href="signup.html">انشئ حسابك الان</a></span>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="/js/logIn.js"></script>
+  </body>
+</html>

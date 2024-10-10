@@ -1,0 +1,701 @@
+/* Start Basic */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+:root {
+  --blue-color: #0D47A1;
+  --white-color: #FFFFFF;
+  --green-color: #4CAF50;
+  --white-blue-color: #03A9F4;
+  --white-yellow-color: #ab9f2e;
+  --white-orange-color: #FF9800;
+  --white-bg-color: #e2e2e2;
+  --black-bg-color: #121215;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.continar {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* small */
+@media (min-width:768px) {
+  .continar {
+    width: 750px;
+  }
+}
+
+/* Mediume */
+@media (min-width:992px) {
+  .continar {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width:1200px) {
+  .continar {
+    width: 1170px;
+  }
+}
+
+/* End Basic */
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Cairo", sans-serif;
+}
+
+/* Start Loders */
+/* End Loders */
+/* Start Header */
+header {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-bg-color);
+  z-index: -1334;
+  transform: skewY(-10deg);
+  transform-origin: top left;
+}
+
+header nav {
+  width: 100%;
+  height: 90px;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  position: relative;
+}
+
+header nav .links-left .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+header nav .links-left .logo span {
+  color: var(--blue-color);
+}
+
+header nav .links-left .logo h1 {
+  color: var(--black-bg-color);
+}
+
+header nav .logo img {
+  width: 60;
+  height: 60;
+  border-radius: 50%;
+}
+
+header nav .links-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav .links-right .links button {
+  padding: 8px 30px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+header nav .links-right .links .one {
+  background-color: var(--white-blue-color);
+}
+
+header nav .links-right .links .one:hover {
+  background-color: var(--white-bg-color);
+}
+
+header nav .links-right .links .one a:hover {
+  color: var(--white-blue-color);
+}
+
+header nav .links-right .links .tow a {
+  color: var(--blue-color);
+}
+
+header nav .links-right .links .tow:hover {
+  background-color: var(--white-blue-color);
+}
+
+header nav .links-right .links .tow a:hover {
+  color: var(--white-color);
+}
+
+header .links-right .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+header .links-right i {
+  font-size: 30px;
+  color: var(--white-blue-color);
+  cursor: pointer;
+  width: 35;
+  height: 40;
+}
+
+header .links-right .one a {
+  color: var(--white-color);
+}
+
+header .links-right .tow a {
+  color: var(--black-bg-color);
+}
+
+header .continar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .continar .text-left {
+  max-width: 500px;
+  transform: scale(0);
+  transition: 1s;
+}
+
+header .continar .text-left h1 {
+  color: var(--black-bg-color);
+  margin-top: 50px;
+  line-height: 1.6;
+}
+
+header .continar .text-left p {
+  color: var(--black-bg-color);
+  font-size: 14px;
+}
+
+header .continar .text-left h1 span {
+  color: var(--white-blue-color);
+}
+
+header .continar .text-left button {
+  padding: 10px 30px;
+  margin-top: 30px;
+  outline: none;
+  border-radius: 8px;
+  background-color: var(--white-blue-color);
+  border: none;
+  cursor: pointer;
+  transition: .4s;
+}
+
+header .continar .text-left button:hover {
+  background-color: var(--white-color);
+}
+
+header .continar .text-left button a:hover {
+  color: var(--white-blue-color);
+}
+
+header .continar .text-left button a {
+  color: var(--white-color);
+  font-size: 18px;
+}
+
+header .continar .img-right img {
+  position: relative;
+  left: -50rem;
+  width: 600px;
+  height: auto;
+  margin-top: 50px;
+  animation: move 5s linear infinite;
+  transition: 1s;
+}
+
+@keyframes move {
+  0%, 100% {
+    top: 0;
+  }
+
+  50% {
+    top: -40px;
+  }
+}
+
+header .icone i {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  color: var(--white-blue-color);
+  font-size: 40px;
+  position: fixed;
+  animation: bouncing 1.5s infinite;
+}
+
+header .links-right i {
+  display: none;
+}
+
+@keyframes bouncing {
+  0%, 10%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+
+  40%, 60% {
+    transform: translateY(-20px);
+  }
+}
+
+/* End Header */
+/* Start Media */
+@media(max-width:768px) {
+  header .links-right i {
+    display: block;
+  }
+
+  header .links-right .links {
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    left: -50em;
+    padding: 30px;
+    transition: .5s;
+  }
+}
+
+@media(max-width:768px) {
+  header .continar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .continar .text-left h1 {
+    margin-top: 100px;
+  }
+
+  header .continar .img-right img {
+    width: 350px;
+    height: auto;
+  }
+}
+
+@media(max-width:375px) {
+  header .continar .img-right img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media(max-width:1023px) {
+  header .continar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .continar .text-left h1 {
+    margin-top: 100px;
+  }
+}
+
+@media(max-width:540px) {
+  header .continar .text-left h1 {
+    font-size: 22px;
+    margin-top: 50px;
+  }
+}
+
+@media(max-width:430px) {
+  header .continar .text-left h1 {
+    margin-top: 100px;
+  }
+}
+
+@media(max-width:375px) {
+  header .continar .text-left h1 {
+    margin-top: 50px;
+  }
+}
+
+/* End Media */
+/* Start Ani */
+.ani {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  background-color: var(--white-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ani .continar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  gap: 90px;
+}
+
+.ani .continar .box {
+  padding: 30px;
+
+}
+
+.ani .continar .box .text p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.ani .continar .box .text .one {
+  background-color: #af0404;
+  color: var(--white-color);
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.ani .continar .box .text .tow {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.ani .continar .box .text .three {
+  background-color: var(--white-orange-color);
+  color: var(--white-color);
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.ani .continar .box .photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* End Ani */
+/* Start Boxes */
+#boxes {
+  width: 100%;
+  height: auto;
+}
+
+#boxes .continar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#boxes h1 {
+  text-align: center;
+  font-size: 35px;
+  color: var(--blue-color);
+  margin-bottom: 30px;
+  transition: 1s;
+  transform: scale(0);
+}
+
+#boxes .continar .box {
+  cursor: pointer;
+  width: 300px;
+  transition: .20s;
+  border: 1px solid var(--blue-color);
+  margin: 20px 0;
+  border-radius: 10px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  position: relative;
+  overflow: hidden;
+  transform: scale(0);
+  transition: 1s;
+}
+
+#boxes .continar .box:hover {
+  border-radius: 10px;
+}
+
+#boxes .continar .box a .photo {
+  padding: 30px;
+  border-radius: 25px;
+}
+
+#boxes .continar .box a .photo img {
+  padding: 20px 0px;
+  width: 238;
+  height: 210;
+}
+
+#boxes .continar .box a .photo .text h3 {
+  padding: 10px 0;
+  border-bottom: 2px solid var(--black-bg-color);
+  color: var(--black-bg-color);
+}
+
+#boxes .continar .box a .photo .text p {
+  margin-top: 10px;
+  color: var(--black-bg-color);
+  font-size: 15px;
+}
+
+/* End Boxes */
+
+/* Start Footer */
+footer {
+  width: 100%;
+  height: auto;
+  background-color: var(--blue-color);
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 1;
+  padding: 40px;
+  color: var(--white-color);
+}
+
+footer .profile {
+  text-align: center;
+}
+
+footer .profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid var(--white-color);
+}
+
+footer .profile h2 {
+  margin: 25px auto;
+
+  span {
+    color: black;
+  }
+}
+
+footer .student ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer .student ul a {
+  color: var(--white-color);
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+footer .links>a {
+  display: block;
+  color: var(--black-bg-color);
+  margin-bottom: 30px;
+  font-size: 21px
+}
+
+footer .links .so {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+}
+
+footer .links .so i {
+  font-size: 25px;
+  color: var(--white-color);
+  position: absolute;
+  transition: .20s;
+}
+
+footer .links .so i:hover {
+  top: -5px;
+}
+
+@media(max-width:900px) {
+  footer {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}
+
+.creat {
+  width: 100%;
+  height: 60px;
+  color: var(--black-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.creat p {
+  letter-spacing: 2px;
+}
+
+.creat span a {
+  font-size: 20px;
+  color: var(--blue-color);
+  font-weight: bold;
+}
+
+/* End Footer */
+/* Start 3-Phase */
+.-phase {
+  width: 100%;
+  padding: 50px 30px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.-phase .boxes {
+  width: 280px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: .6s;
+  border: 1px solid var(--blue-color);
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  cursor: pointer;
+  transform: scale(0);
+  position: relative;
+  bottom: -10rem;
+}
+
+.-phase .boxes:hover {
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.-phase .boxes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.-phase .boxes .photo img {
+  width: 200;
+  height: auto;
+}
+
+.-phase .boxes .photo .text h1 {
+  color: var(--blue-color);
+  margin-top: 60px;
+  letter-spacing: 2px;
+}
+
+.-phase .boxes:hover .photo .text h1 {
+  color: var(--black-bg-color);
+}
+
+/* End 3-Phase */
+/* Start Exam-lessone */
+.accordion {
+  background-color: var(--white-bg-color);
+}
+
+.accordion .container .accordion-item {
+  background-color: var(--white-bg-color);
+  padding: 25px 0;
+}
+
+.accordion .container .accordion-item h2 {
+  border-left: 5px solid var(--white-blue-color);
+}
+
+.accordion .container .accordion-item h2 h3 {
+  color: var(--white-blue-color);
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.accordion .container .accordion-item .collapse .accordion-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  transition: .4s;
+}
+
+.accordion .container .accordion-item .collapse .accordion-body a:hover button {
+  background-color: transparent;
+  color: var(--black-bg-color);
+  border: 1px solid var(--black-bg-color);
+}
+
+.accordion .container .accordion-item .collapse .accordion-body a button {
+  background-color: var(--white-blue-color);
+  color: var(--white-color);
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 8px 15px;
+  transition: .4s;
+  max-width: 90px;
+  height: auto;
+  word-wrap: break-word;
+}
+
+.accordion .container .accordion-item .collapse p {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* End Exam-lessone */
