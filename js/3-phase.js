@@ -1,4 +1,4 @@
-// Start Boxes Phase
+// Start Boxes Phas
 window.onload = function() {
   var box1 = document.getElementById("box-1");
   var box2 = document.getElementById("box-2");
